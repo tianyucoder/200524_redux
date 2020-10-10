@@ -1,17 +1,17 @@
 ## 1.求和案例_redux精简版
-		(1).取出Count组件自身的状态
+		(1).去除Count组件自身的状态
 		(2).src下建立:
 					-src
 						-redux
 							-store.js
 							-count_reducer.js
 
-		(3).store.js内容如下：
+		(3).store.js：
 					1).引入redux中的createStore函数，创建一个store
 					2).createStore调用时要传入一个为其服务的reducer
 					3).记得暴露store对象
 
-		(4).count_reducer.js内容如下：
+		(4).count_reducer.js：
 					1).reducer的本质是一个函数，接收：preState,action，返回加工后的状态
 					2).reducer有两个作用：初始化状态，加工状态
 					3).reducer被第一次调用时，是store自动触发的，传递的preState是undefined
