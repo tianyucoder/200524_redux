@@ -2,7 +2,6 @@
 
 const iniState = 0 //初始化状态
 export default function (preState=iniState,action){
-	// console.log('@',preState);
 	//从action对象中获取type,data
 	const {type,data} = action
 	//根据type决定如何加工状态
