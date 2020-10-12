@@ -6,7 +6,7 @@
 import {connect} from 'react-redux'
 import {incrementAction,decrementAction,incrementAsyncAction} from '../redux/count_action'
 import React, { Component } from 'react'
-//定义一个求和组件
+//定义一个求和组件(UI组件)
 class Count extends Component {
 
 	increment = ()=>{
