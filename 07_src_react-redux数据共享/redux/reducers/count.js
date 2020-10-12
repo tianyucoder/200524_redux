@@ -1,5 +1,5 @@
 //该文件是定义：为Count组件服务的reducer————本质是函数
-import {INCREMENT,DECREMENT} from './constant'
+import {INCREMENT,DECREMENT} from '../constant'
 
 const iniState = 0 //初始化状态
 export default function (preState=iniState,action){
