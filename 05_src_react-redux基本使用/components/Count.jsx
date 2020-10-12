@@ -4,29 +4,29 @@ export default class Count extends Component {
 
 	increment = ()=>{
 		const {value} = this.checkedNumber//获取选择的数字
-		// store.dispatch(incrementAction(value*1))
 		this.props.jia(value*1)
 	}
 
 	decrement = ()=>{
 		const {value} = this.checkedNumber//获取选择的数字
-		// store.dispatch(decrementAction(value*1))
+		this.props.jian(value*1)
 	}
 
 	incrementOdd = ()=>{
-		// const count = store.getState() //获取原状态
-		// if(count % 2 === 0) return
+		const {count} = this.props //获取原状态
+		if(count % 2 === 0) return
 		const {value} = this.checkedNumber//获取选择的数字
-		// store.dispatch(incrementAction(value*1))
+		this.props.jia(value*1)
 	}
 
 	incrementAsync = ()=>{
 		const {value} = this.checkedNumber//获取选择的数字
 		// store.dispatch(incrementAsyncAction(value*1,500))
+		this.props.jia(value*1,500)
 	}
 
 	render() {
-		console.log(this.props);
+		// console.log(this.props);
 		return (
 			<div>
 				<h1>当前求和为：{this.props.count}</h1>
